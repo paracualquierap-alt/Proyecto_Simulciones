@@ -1,0 +1,179 @@
+body {
+    /* Degradado sutil idéntico al de la página de inicio y el simulador térmico */
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    margin: 0;
+    color: #4f5e71; /* Gris oscuro suave para los textos principales */
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff; /* Tarjeta blanca limpia estilo Light Mode */
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(165, 175, 190, 0.25);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    color: #81c784; /* Verde menta pastel para la jerarquía de combinaciones */
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+}
+
+/* Caja de la fórmula adaptada al estilo pastel */
+.formula {
+    background: #f1f8e9; /* Fondo verde oliva muy suave */
+    padding: 14px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 25px;
+    border: 1px dashed #c5e1a5;
+}
+
+.formula strong {
+    color: #558b2f;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.formula span {
+    color: #33691e;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+}
+
+/* Botón de volver premium integrado perfectamente */
+.navegacion-retorno {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.btn-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #8a99ad;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.btn-volver:hover {
+    color: #4f5e71;
+    background: #e2e8f7;
+    border-color: #cbd5e1;
+}
+
+/* Bloques del formulario (Fieldsets) estilo formulario limpio */
+.grupo {
+    border: 1px solid #e8f5e9;
+    background: #f9fbf9; /* Fondo sutilmente limpio */
+    padding: 15px 20px 20px 20px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Inputs en paralelo */
+    gap: 15px;
+}
+
+/* Título del fieldset (legend) integrado con la estética claro pastel */
+.grupo legend {
+    color: #66bb6a;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #334155;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #a5d6a7; /* Borde verde al hacer foco */
+    box-shadow: 0 0 0 3px rgba(165, 214, 167, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    /* Degradado pastel de Verde Esmeralda a Menta brillante */
+    background: linear-gradient(90deg, #a5d6a7, #81c784);
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(165, 214, 167, 0.3);
+    transition: transform 0.1s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(1.03);
+    box-shadow: 0 6px 16px rgba(165, 214, 167, 0.45);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 15px;
+    color: #718096;
+    border: 1px solid #e2e8f0;
+    min-height: 22px;
+    transition: all 0.3s ease;
+}
+
+.resultado.exito {
+    background: #e8f5e9;
+    border-color: #c8e6c9;
+    color: #388e3c;
+    font-size: 18px;
+    font-weight: bold;
+}
